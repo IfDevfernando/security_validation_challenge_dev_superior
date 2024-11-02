@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.devsuperior.demo.dto.CityDTO;
-import com.devsuperior.demo.service.CityService;
+import com.devsuperior.demo.services.CityService;
 
 import jakarta.validation.Valid;
 

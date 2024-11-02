@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 import com.devsuperior.demo.entities.User;
 import com.devsuperior.demo.projections.UserDetailsProjection;
 
-
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 	

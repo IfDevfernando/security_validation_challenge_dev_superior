@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.devsuperior.demo.controller.exceptions.FieldMessage;
+import com.devsuperior.demo.controllers.exceptions.FieldMessage;
 import com.devsuperior.demo.dto.UserInsertDTO;
 import com.devsuperior.demo.entities.User;
 import com.devsuperior.demo.repositories.UserRepository;

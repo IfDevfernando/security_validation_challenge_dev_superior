@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.devsuperior.demo.dto.EventDTO;
-import com.devsuperior.demo.service.EventService;
+import com.devsuperior.demo.services.EventService;
 
 import jakarta.validation.Valid;
 

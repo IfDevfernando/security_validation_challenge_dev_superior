@@ -1,29 +1,20 @@
-package com.devsuperior.demo.controller.exceptions;
+package com.devsuperior.demo.controllers.exceptions;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 
 public class StandardError implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     private Instant timestamp;
     private Integer status;
-    private String error;
+    private String Error;
     private String message;
     private String path;
 
-    private List<FieldMessage> errors = new ArrayList<>();
-
     public StandardError() {
-    }
-
-    public StandardError(Instant timestamp, Integer status, String error, String path) {
-        this.timestamp = timestamp;
-        this.status = status;
-        this.error = error;
-        this.path = path;
     }
 
     public Instant getTimestamp() {
@@ -43,11 +34,11 @@ public class StandardError implements Serializable {
     }
 
     public String getError() {
-        return error;
+        return Error;
     }
 
     public void setError(String error) {
-        this.error = error;
+        Error = error;
     }
 
     public String getMessage() {
@@ -64,13 +55,5 @@ public class StandardError implements Serializable {
 
     public void setPath(String path) {
         this.path = path;
-    }
-
-    public List<FieldMessage> getErrors() {
-        return errors;
-    }
-
-    public void addErrors(String fieldName, String message) {
-        errors.add(new FieldMessage(fieldName, message));
     }
 }

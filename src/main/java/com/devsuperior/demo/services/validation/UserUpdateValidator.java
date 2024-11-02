@@ -7,7 +7,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerMapping;
 
-import com.devsuperior.demo.controller.exceptions.FieldMessage;
+import com.devsuperior.demo.controllers.exceptions.FieldMessage;
 import com.devsuperior.demo.dto.UserUpdateDTO;
 import com.devsuperior.demo.entities.User;
 import com.devsuperior.demo.repositories.UserRepository;

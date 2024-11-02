@@ -1,4 +1,4 @@
-package com.devsuperior.demo.service;
+package com.devsuperior.demo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -52,4 +52,6 @@ public class EventService {
 		entity = repository.save(entity);
 		return new EventDTO(entity);
 	}
+	
+	
 }

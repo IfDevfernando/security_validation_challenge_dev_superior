@@ -1,10 +1,7 @@
-package com.devsuperior.demo.service;
+package com.devsuperior.demo.services;
 
-import com.devsuperior.demo.dto.CityDTO;
-import com.devsuperior.demo.entities.City;
-import com.devsuperior.demo.repositories.CityRepository;
-import com.devsuperior.demo.services.exceptions.DatabaseException;
-import com.devsuperior.demo.services.exceptions.ResourceNotFoundException;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -13,8 +10,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-import java.util.stream.Collectors;
+import com.devsuperior.demo.dto.CityDTO;
+import com.devsuperior.demo.entities.City;
+import com.devsuperior.demo.repositories.CityRepository;
+import com.devsuperior.demo.services.exceptions.DatabaseException;
+import com.devsuperior.demo.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class CityService {
@@ -48,4 +48,6 @@ public class CityService {
 			throw new DatabaseException("Falha de integridade referencial");
 		}
 	}
+	
+	
 }

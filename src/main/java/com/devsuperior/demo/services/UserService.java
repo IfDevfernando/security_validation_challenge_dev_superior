@@ -1,4 +1,4 @@
-package com.devsuperior.demo.service;
+package com.devsuperior.demo.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -29,11 +29,9 @@ import com.devsuperior.demo.services.exceptions.ResourceNotFoundException;
 
 import jakarta.persistence.EntityNotFoundException;
 
-
 @Service
 public class UserService implements UserDetailsService {
-
-
+	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
